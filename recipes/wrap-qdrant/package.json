@@ -1,0 +1,22 @@
+{
+  "name": "@mcp-kit/recipe-qdrant",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "description": "Recipe: wrap the Qdrant REST API as MCP tools (create_collection, upsert_points, search) using the kit's hardened REST client. Paired with a Python twin.",
+  "license": "MIT",
+  "bin": {
+    "mcp-recipe-qdrant": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@mcp-kit/core": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.76"
+  }
+}
