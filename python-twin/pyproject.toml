@@ -27,5 +27,5 @@ mcp-kit-starter = "mcp_kit_starter.cli:main"
 packages = ["mcp_kit_starter"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["tests", "recipes"]
 addopts = "-q"
