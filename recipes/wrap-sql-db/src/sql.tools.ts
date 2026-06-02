@@ -114,7 +114,7 @@ const runSelectQuery = defineTool({
     columns: z.array(z.string()).describe("Column names, in order."),
     rowCount: z.number().describe("Number of rows returned (after the cap)."),
     truncated: z.boolean().describe("True if more rows existed than max_rows."),
-    rows: z.array(z.record(z.unknown())).describe("The result rows as objects keyed by column."),
+    rows: z.array(z.record(z.string(), z.unknown())).describe("The result rows as objects keyed by column."),
   },
   annotations: { readOnlyHint: true, openWorldHint: false },
   examples: [
