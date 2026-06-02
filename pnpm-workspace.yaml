@@ -2,3 +2,5 @@ packages:
   - "starter"
   - "recipes/*"
   - "lint"
+onlyBuiltDependencies:
+  - esbuild
