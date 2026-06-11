@@ -65,7 +65,7 @@ const VERBS = new Set([
   "convert", "parse", "render", "format", "build", "generate", "compute",
   "calculate", "summarize", "translate", "transform", "extract",
   "check", "validate", "verify", "resolve", "describe", "inspect", "scan", "lint",
-  "analyze", "audit", "scaffold", "explain", "grade", "score",
+  "analyze", "audit", "scaffold", "explain", "grade", "score", "compare", "diff",
   "ping", "echo", "wrap", "open", "close", "watch", "wait",
 ]);
 
